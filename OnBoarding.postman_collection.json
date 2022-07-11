@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "02b4eb7c-6195-428e-ab27-f2195e3dac94",
+		"name": "OnBoarding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15181773"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Get All Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cliente By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente?identificacion=1719815019",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente"
+							],
+							"query": [
+								{
+									"key": "identificacion",
+									"value": "1719815019"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Cliente Without C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"9999999994\",\r\n  \"nombres\": \"Prueba Post Nombre Cliente1\",\r\n  \"apellidos\": \"Prueba Post Apellido Cliente1\",\r\n  \"edad\": 25,\r\n  \"fechaNacimiento\": \"1997-01-01\",\r\n  \"direccion\": \"Direccion Prueba\",\r\n  \"telefono\": \"999999999\",\r\n  \"estadoCivilId\": 1,\r\n  \"sujetoCredito\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Cliente With",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"9999999997\",\r\n  \"nombres\": \"Prueba Post Nombre Cliente1\",\r\n  \"apellidos\": \"Prueba Post Apellido Cliente1\",\r\n  \"edad\": 25,\r\n  \"fechaNacimiento\": \"1997-01-01\",\r\n  \"direccion\": \"Direccion Prueba\",\r\n  \"telefono\": \"999999999\",\r\n  \"estadoCivilId\": 2,  \r\n  \"identificacionConyugue\": \"999999123\",\r\n  \"nombreConyugue\": \"Prueba Post Nombre Conyugue\",\r\n  \"sujetoCredito\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"9999999994\",\r\n  \"nombres\": \"Prueba Post Nombre Cliente1\",\r\n  \"apellidos\": \"Prueba Post Apellido Cliente1\",\r\n  \"edad\": 25,\r\n  \"fechaNacimiento\": \"1997-01-01\",\r\n  \"direccion\": \"Direccion Prueba\",\r\n  \"telefono\": \"999999999\",\r\n  \"estadoCivilId\": 1,\r\n  \"sujetoCredito\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cliente By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Cliente/9999999994",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Cliente",
+								"9999999994"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patio",
+			"item": [
+				{
+					"name": "Get All Patios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Patio/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Patio",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patio By Punto de Venta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Patio?puntoVenta=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Patio"
+							],
+							"query": [
+								{
+									"key": "puntoVenta",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Patio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"puntoVenta\": 1,\r\n        \"nombre\": \"Patio Nombre Cambio\",\r\n        \"direccion\": \"Patio Direccion 3\",\r\n        \"telefono\": \"0999999994\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Patio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Patio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Patio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Prueba PM Patio Nombre\",\r\n  \"direccion\": \"Prueba PM Patio Direc\",\r\n  \"telefono\": \"999999999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Patio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Patio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patio By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Patio?puntoVenta=7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Patio"
+							],
+							"query": [
+								{
+									"key": "puntoVenta",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Asignacion Cliente-Patio",
+			"item": [
+				{
+					"name": "Get Asignaciones By Patio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio/ByPatio?puntoVenta=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio",
+								"ByPatio"
+							],
+							"query": [
+								{
+									"key": "puntoVenta",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Asignaciones By Cliente Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio/ByCliente?identificacionCliente=1719815019",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio",
+								"ByCliente"
+							],
+							"query": [
+								{
+									"key": "identificacionCliente",
+									"value": "1719815019"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Asignacion By ClienteId And Punto Venta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio?identificacion=1719815019&puntoVenta=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio"
+							],
+							"query": [
+								{
+									"key": "identificacion",
+									"value": "1719815019"
+								},
+								{
+									"key": "puntoVenta",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Asignacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"patioId\": 2,\r\n  \"clienteId\": \"1719815019\",\r\n  \"fechaAsignacion\": \"2022-07-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Asignacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"patioId\": 2,\r\n  \"clienteId\": \"1719815019\",\r\n  \"fechaAsignacion\": \"2022-07-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Asignacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/AsignacioClientePatio?identificacion=1719815019&puntoVenta=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"AsignacioClientePatio"
+							],
+							"query": [
+								{
+									"key": "identificacion",
+									"value": "1719815019"
+								},
+								{
+									"key": "puntoVenta",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehiculo",
+			"item": [
+				{
+					"name": "Get All Vehiculos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Vehiculos By Modelo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo/allByModel?modelo=string",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo",
+								"allByModel"
+							],
+							"query": [
+								{
+									"key": "modelo",
+									"value": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Vehiculos By Marca Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo/allByMarca?marcaId=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo",
+								"allByMarca"
+							],
+							"query": [
+								{
+									"key": "marcaId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vehiculo By Placa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo?placa=PRU-1234",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo"
+							],
+							"query": [
+								{
+									"key": "placa",
+									"value": "PRU-1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Vehiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"PRUE-1234\",\r\n  \"modelo\": \"Prueba Modelo\",\r\n  \"numChasis\": \"987654321\",\r\n  \"marcaId\": 1,\r\n  \"tipo\": \"Prueba Tipo\",\r\n  \"cilindraje\": 45.20,\r\n  \"avaluo\": 15000.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Vehiculo Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"PRUE-1234\",\r\n  \"modelo\": \"Prueba Modelo\",\r\n  \"numChasis\": \"987654321\",\r\n  \"marcaId\": 2,\r\n  \"tipo\": \"Prueba Tipo\",\r\n  \"cilindraje\": 45.20,\r\n  \"avaluo\": 1500.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vehiculo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Vehiculo?placa=PRUE-01234",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Vehiculo"
+							],
+							"query": [
+								{
+									"key": "placa",
+									"value": "PRUE-01234"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Credito",
+			"item": [
+				{
+					"name": "Get All Creditos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Credito/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Credito",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Credito By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Credito?idCredito=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Credito"
+							],
+							"query": [
+								{
+									"key": "idCredito",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Credito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fechaElaboracion\": \"2022-07-11\",\r\n  \"clienteId\": \"1719815021\",\r\n  \"puntoVenta\": 3,\r\n  \"placa\": \"PRUE-5678\",\r\n  \"mesesPlazo\": 10,\r\n  \"cuotas\": 500,\r\n  \"entrada\": 15000,\r\n  \"estadoCreditoId\": 1,\r\n  \"ejecutivoId\": \"1234567801\",\r\n  \"observacion\": \"Prueba Post Credito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44390/api/v1/Credito",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44390",
+							"path": [
+								"api",
+								"v1",
+								"Credito"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
